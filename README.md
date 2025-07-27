@@ -11,6 +11,6 @@ size - calculates total size of the current directory and subdirectories |
 exit - quit out of the program loop |
 
 Notes
-Files created with touch are real files in the directory of the program, which are stored on the disk
-write appends text and automatically adds a newline
-The entire folder structure beyond the root is simulated in memory
+Files created with touch are real files in the directory of the program, which are stored on the disk.
+write appends text and automatically adds a newline.
+The entire folder structure beyond the root is simulated in memory.

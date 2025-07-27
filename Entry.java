@@ -1,4 +1,3 @@
-package filedirectoryproject;
 import java.io.*;
 import java.util.*;
 

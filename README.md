@@ -2,7 +2,7 @@ A simple Java console application that simulates a file system with folders and 
 You can navigate through folders, list folder contents, create new files and folders, append text to files, and calculate the total byte size of the directory.
 
 Methods
-ls - List files and folders in the current directory
+ls - List files and folders in the current directory \n
 cd <folderName> - change the directory 
 cd .. - go up to the parent directory
 mkdir <folderName> - create a new subfolder

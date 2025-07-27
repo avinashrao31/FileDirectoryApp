@@ -1,14 +1,12 @@
-
-
 import java.util.Scanner;
 
 
-//Main application
+//Main
 public class DirectoryApp {
 	public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
 
-	    // Create the root folder
+	    //Create the root folder
 	    FolderEntry root = new FolderEntry("root", null);
 	    FolderEntry currentFolder = root;
 

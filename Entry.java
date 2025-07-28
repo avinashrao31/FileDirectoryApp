@@ -63,7 +63,7 @@ class FileEntry extends Entry {
 //FolderEntry class
 class FolderEntry extends Entry {
     private List<Entry> children;
-    private FolderEntry parent; // to allow cd ..
+    private FolderEntry parent; //to allow cd ..
 
     public FolderEntry(String name, FolderEntry parent) {
         super(name);

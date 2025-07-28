@@ -13,7 +13,7 @@ public class DirectoryApp {
 	    System.out.println("Welcome to Directory Size Calculator!");
 	    System.out.println("Commands: ls | cd <folderName> | cd .. | mkdir <folderName> | touch <fileName> | write <fileName> <text> | size | exit");
 
-	    while (true) {
+	    while (true) { //basic command loop
 	        System.out.print(currentFolder.getName() + "> ");
 	        String input = scanner.nextLine().trim();
 	        if (input.isEmpty()) continue;
@@ -26,13 +26,13 @@ public class DirectoryApp {
 	        }
 
 	        switch (command) {
-	            case "ls":
+	            case "ls": //list directory content
 	                for (Entry e : currentFolder.getChildren()) {
 	                    System.out.println(e.getName() + (e.isFolder() ? "/" : ""));
 	                }
 	                break;
 
-	            case "cd":
+	            case "cd": //change directory to specified directory or root folder
 	                if (parts.length < 2) {
 	                    System.out.println("Usage: cd <folderName> or cd ..");
 	                    break;
@@ -54,7 +54,7 @@ public class DirectoryApp {
 	                }
 	                break;
 
-	            case "mkdir":
+	            case "mkdir": //create new folder
 	                if (parts.length < 2) {
 	                    System.out.println("Usage: mkdir <folderName>");
 	                    break;
@@ -69,7 +69,7 @@ public class DirectoryApp {
 	                }
 	                break;
 
-	            case "touch":
+	            case "touch": //create new file
 	                if (parts.length < 2) {
 	                    System.out.println("Usage: touch <fileName>");
 	                    break;
@@ -84,7 +84,7 @@ public class DirectoryApp {
 	                }
 	                break;
 
-	            case "write":
+	            case "write": //append text to existing file
 	                if (parts.length < 2) {
 	                    System.out.println("Usage: write <fileName> <text>");
 	                    break;
@@ -105,7 +105,7 @@ public class DirectoryApp {
 	                }
 	                break;
 
-	            case "size":
+	            case "size": //calculate size of current directory and subdirectories
 	                System.out.println("Total size: " + currentFolder.calculateTotalSize() + " bytes");
 	                break;
 
